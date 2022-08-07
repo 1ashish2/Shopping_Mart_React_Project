@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Message container Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="form-container container"
+  >
+    <div
+      class="justify-content-md-center  row"
+    >
+      <div
+        class="col-md-6 col-12"
+      >
+        <h1>
+          Sign In
+        </h1>
+        <form
+          class=""
+        >
+          <div
+            class="my-2"
+          >
+            <label
+              class="form-label"
+            >
+              Email Address
+            </label>
+            <input
+              aria-required="true"
+              class="form-control"
+              name="email"
+              placeholder="Enter email"
+              required=""
+              type="email"
+            />
+          </div>
+          <div>
+            <label
+              class="form-label"
+            >
+              Password
+            </label>
+            <input
+              aria-required="true"
+              class="form-control"
+              name="password"
+              placeholder="Enter password"
+              required=""
+              type="password"
+            />
+          </div>
+          <button
+            class="my-2 btn btn-primary"
+            data-testid="button"
+            type="submit"
+          >
+            Sign In
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

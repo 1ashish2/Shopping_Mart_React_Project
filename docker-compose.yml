@@ -1,0 +1,34 @@
+version: "3.7"
+services:
+  backend:
+    image: "sentiment-backend"
+    build:
+      ./backend/
+      # context: ./backend
+      # dockerfile: ./Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - mernnetwork
+    volumes:
+      - ./backend/:/app
+      - /app/node_modules
+  frontend:
+    image: "sentiment-frontend"
+    build:
+      ./client/
+      # context: ./client
+      # dockerfile: ./Dockerfile
+
+    ports:
+      - "3000:3000"
+    networks:
+      - mernnetwork
+    volumes:
+      - ./client/:/app
+      - /app/node_modules
+    depends_on:
+      - backend
+networks:
+  mernnetwork:
+    driver: bridge

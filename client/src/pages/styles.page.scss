@@ -1,0 +1,242 @@
+@use "../color_variables" as variable;
+
+/* Start of Product Detail Page CSS */
+.product-main {
+  margin-top: 5rem;
+
+  @media screen and (max-width: 990px) {
+    .productDetail-container {
+      margin: 0 1.5rem 0 1.5rem;
+    }
+  }
+
+  .productDetail-container {
+    display: grid;
+    border: 1px solid variable.$main-text-color;
+    padding: 15px;
+    margin: 0 1rem 0 1rem;
+    box-shadow: 5px 10px #ffe4c4;
+  }
+  @media screen and (max-width: 671px) {
+    .productDetail-container {
+      grid-template-rows: 1fr 1.8fr;
+    }
+  }
+
+  @media screen and (min-width: 671px) {
+    .productDetail-container {
+      grid-template-columns: 1fr 1.8fr;
+    }
+  }
+
+  .product-img {
+    text-align: center;
+
+    .productImage {
+      width: 18rem;
+      height: 18rem;
+    }
+  }
+
+  .product-des {
+    font-size: 1.2rem;
+    margin: 1rem 0rem;
+    background-color: variable.$background-color;
+  }
+  .product-price {
+    font-size: 1.5rem;
+    margin: 1rem 0rem;
+
+    @media screen and (max-width: 440px) {
+      display: grid;
+    }
+
+    .price-padding {
+      padding: 0;
+    }
+  }
+}
+/* End of Product Detail Page CSS */
+
+/* Start of Basket List CSS on Product Listing Page Page */
+.basketlist-page {
+  justify-self: end;
+  width: 57%;
+  min-width: 280px;
+
+  button.remove-button {
+    border: none;
+    background-color: variable.$background-color;
+  }
+
+  .basketList-count {
+    font-weight: variable.$bold-font-weight;
+    font-size: 1rem;
+  }
+
+  .image-size {
+    width: 5rem;
+    height: 5rem;
+  }
+  .productlist-page-basket {
+    background-color: variable.$background-color;
+    margin-top: 2rem;
+    color: variable.$main-text-color;
+    text-align: center;
+
+    .go-to-cart {
+      margin-bottom: 1rem;
+      float: right;
+    }
+  }
+}
+
+/* End of Basket List CSS */
+
+/* Start of Product Listing Page CSS */
+
+.product-page {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  // margin-left: 0.5rem;
+  justify-items: center;
+  column-gap: 2.5%;
+}
+
+.productList-container {
+  margin: 70px 2.5rem 0 2.5rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 2.5%;
+}
+
+/* End of Product Listing Page CSS */
+
+/* Start of Cart Page CSS */
+
+.empty-text {
+  margin-top: 10rem;
+  text-align: center;
+}
+
+.cartList-count {
+  font-weight: variable.$bold-font-weight;
+  margin: 0.5rem;
+}
+
+.cart-container {
+  margin: 70px 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 990px) {
+  .cart-container {
+    margin: 70px 2.5rem 1rem 2.5rem;
+  }
+}
+
+.cart {
+  margin-top: 40px;
+}
+
+ul.collection {
+  list-style: none;
+}
+.collection .collection-item {
+  display: flex;
+}
+.collection-item.avatar .title {
+  font-size: 20px;
+  font-weight: 500;
+  color: variable.$main-text-color;
+  display: block;
+  margin-bottom: 20px;
+}
+.collection .collection-item img {
+  width: 150px;
+  height: 150px;
+  margin-right: 25px;
+}
+
+button.btn.navButton {
+  margin-top: 0.5%;
+}
+
+.cartlist-head {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  background-color: variable.$background-color;
+  height: 3rem;
+  align-content: center;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+.cart-total {
+  grid-column-end: none;
+}
+
+/* End of Cart Page CSS */
+
+/* Common CSS */
+
+.material-icons {
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  //For Cart Page
+  span.title,
+  p.title-description {
+    display: none;
+  }
+  /* Start Product List Page CSS */
+  .productList-container {
+    display: block;
+  }
+
+  .product-page {
+    grid-template-columns: 1fr;
+  }
+  /* End Product List Page CSS */
+}
+
+@media screen and (min-width: 481px) and (max-width: 1220px) {
+  //Product List Page CSS
+  .product-page {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2.5%;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  //Product List
+  .productList-container {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+  }
+}
+
+@media screen and (min-width: 1550px) {
+  //Product List
+  .product-page {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (max-width: 700px) {
+  //Start Product List CSS
+
+  .basketlist-page {
+    display: none;
+  }
+  .productList-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  //End Product List CSS
+}
+
+/* End of Common CSS */

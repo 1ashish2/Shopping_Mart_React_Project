@@ -1,0 +1,179 @@
+@use "../color_variables" as variable;
+
+/* Start of CardBox CSS */
+
+.card-body {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+}
+
+.cardbox-image {
+  width: 100%;
+  height: 100%;
+}
+
+.cardbox-btn {
+  width: 100%;
+}
+
+.cart-main {
+  margin-top: 2rem;
+  .link-cart-title {
+    text-decoration: none;
+  }
+  .card-box-input-button {
+    grid-column-end: 3;
+    grid-column-start: 1;
+    margin-left: 0rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.card-box-input-field {
+  width: 75%;
+  border-radius: 10%;
+}
+span.cardBox-price {
+  font-weight: 400;
+  font-size: 1.3rem;
+}
+div.cardBoxPrice-container {
+  margin-top: 0.4rem;
+  align-self: flex-end;
+  // gap: 0.4rem;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+}
+
+/* End of CardBox CSS */
+
+/* Start of Navigation CSS */
+
+/* Start of Modal Box CSS */
+.btn-close {
+  background-image: url("../../public/static/images/cross.svg") !important;
+}
+
+/* End of Modal Box CSS */
+
+.navbar-toggler-icon {
+  background-image: url("../../public/static/images/nav.svg") !important;
+}
+
+.nav-container.container-fluid {
+  margin-left: 1.5rem;
+}
+
+@media screen and (max-width: 990px) {
+  .nav-container.container-fluid {
+    margin-left: 1rem;
+  }
+}
+
+.cart-nav {
+  margin-right: 1rem;
+  text-align: right;
+  width: 4rem;
+  i,
+  i:focus {
+    color: variable.$main-text-color;
+    box-shadow: none;
+  }
+  // i:hover,
+  // i:active {
+  //   color: variable.$white-color;
+  // }
+  .badge {
+    padding-left: 9px;
+    padding-right: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+  }
+
+  .label-warning[href],
+  .badge-warning[href] {
+    background-color: #c67605;
+  }
+  #labelCartCount {
+    font-size: 12px;
+    background: #ff0000;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+    margin-left: -10px;
+  }
+  // span{
+  //   font-size: 1.5rem;
+  //   font-weight: bold;
+  //   color: white;
+  //   float: right;
+  // }
+}
+
+.nav-title-login {
+  text-decoration: none;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: contents !important;
+}
+
+.nav-title {
+  text-decoration: none;
+  color: white;
+  font-size: 1.3rem;
+}
+
+.nav-brand {
+  text-decoration: none;
+  color: #423200 !important;
+  font-size: 1.8rem;
+}
+.navbar-toggle {
+  width: 3.5rem;
+}
+
+.navbar-login {
+  color: #423200 !important;
+  border: 1px solid #423200 !important;
+}
+
+@media screen and (max-width: 900px) {
+  .navbar-logbutton,
+  .navbar-login {
+    margin-top: 1rem;
+    margin-left: 0.5rem;
+    color: #423200 !important;
+  }
+}
+nav.navbar.navbar-expand-lg.navbar-secondary.bg-secondary.fixed-top {
+  background-color: variable.$background-color !important;
+  color: variable.$main-text-color;
+}
+
+// a.text-light,
+// a.text-light:focus {
+//   color: variable.$main-text-color !important;
+//   background-color: variable.$background-color;
+//   border-color: variable.$main-text-color;
+//   box-shadow: none;
+// }
+
+// a.text-light:hover,
+// a.text-light:active {
+//   color: variable.$white-color !important;
+//   background-color: variable.$main-text-color;
+//   border-color: variable.$white-color;
+// }
+
+/* End of Navigation CSS */
+
+/* Start of Form Container CSS */
+
+.form-container {
+  margin-top: 10rem;
+}
+
+/* End of Form Container CSS */

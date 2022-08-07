@@ -1,0 +1,35 @@
+@use "./color_variables" as variable;
+.App {
+  text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  table thead {
+    display: none;
+  }
+  table td {
+    display: flex;
+  }
+
+  table td::before {
+    content: attr(label);
+    font-weight: bold;
+    width: 120px;
+    min-width: 120px;
+  }
+}
+
+button.btn,
+button.btn:focus {
+  background-color: variable.$background-color;
+  color: #000000;
+  border-color: variable.$main-text-color;
+  box-shadow: none;
+}
+
+button.btn:hover,
+button.btn:active {
+  color: variable.$white-color;
+  background-color: variable.$main-text-color;
+  border-color: variable.$white-color;
+}

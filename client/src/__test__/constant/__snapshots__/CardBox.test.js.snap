@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Button Component matches snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="cart-main card"
+  >
+    <a
+      href="/productDetail"
+    >
+      <img
+        alt="Fresho Kiwi - Green, 3 pcs"
+        class="card-img-top"
+        src="/static/images/products/fruit-n-veg/kiwi-green.jpg"
+      />
+    </a>
+    <div
+      class="card-body"
+    >
+      <a
+        class="text-dark link-cart-title"
+        href="/productDetail"
+      >
+        <div
+          class="cart-title card-title h5"
+        >
+          <strong>
+            Fresho Kiwi - Green, 3 pcs
+          </strong>
+        </div>
+      </a>
+      <div
+        class="cardBoxPrice-container"
+      >
+        <span
+          class="cardBox-price"
+        >
+          Price ₹87
+        </span>
+        <span
+          class="cardBox-price"
+        >
+          Per 3 pcs
+        </span>
+        <div
+          class="card-box-input-button"
+        >
+          <input
+            aria-label="number of quantity"
+            class="card-box-input-field"
+            data-testid="input"
+            max="90"
+            min="0"
+            type="number"
+            value="0"
+          />
+          <div>
+            <button
+              class="btn"
+              data-testid="button"
+            >
+              Add to Cart
+            </button>
+          </div>
+        </div>
+        <div />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
