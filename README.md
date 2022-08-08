@@ -1,4 +1,4 @@
-# Tesco_Shooping_Project
+# ShoPping_Mart_React_Project
 Run project in docker:
 step : docker compose up
 
