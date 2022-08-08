@@ -1,4 +1,4 @@
-# ShoPping_Mart_React_Project
+# Shopping_Mart_React_Project
 Run project in docker:
 step : docker compose up
 
